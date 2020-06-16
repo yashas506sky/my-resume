@@ -1,0 +1,176 @@
+body{
+    background-color:#DCDCDC;
+	color: black;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	
+	font: normal 16px Arial, Helvetica, sans-serif;
+
+	line-height:1.6em;
+	margin:0
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.img-my{
+    width: 300px;
+}
+.container h1{
+    text-align: center;
+}
+.container table {
+    border-collapse: collapse;
+    float: right;
+  }
+  
+  table, th, td {
+    border: 2px solid black;
+}
+.box-1{
+    text-align: left;
+}
+ul.a {
+    list-style-type: circle;
+  }
+  .block{
+	float:left;
+	width:33.3%;
+	border:1px solid black;
+	padding:10px;
+	box-sizing:border-box;
+}  
+.btn{
+    border: 1px solid blue;
+    background: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px; 
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;   
+}
+.btn1,.btn2,.btn3{
+    color: black;
+}
+.btn1:hover,.btn2:hover,.btn3:hover{
+  color: grey;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background:black;
+    z-index: -1;
+    transition: 0.8s;
+    
+}
+.btn1::before,.btn2::before,.btn3::before{
+    top: 0%;
+border-radius: 0 0 50% 50%;
+}
+.btn1:hover::before,.btn2:hover::before,.btn3:hover::before{
+    height: 180%;
+}
+footer {
+    background-color:#DCDCDC;
+    color: rgb(24, 21, 21);
+    padding: 2% 0;
+    width: 100%;
+    clear: both;
+    height: 100px;
+  }
+  .footer-content {
+    max-width: 960px;
+    padding: 2% 0;
+    margin: 0 auto;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4;
+    color: black;
+    letter-spacing: .03em;
+    font-size: 1em;
+  }
+  .credit {
+    float: left;
+  }
+  .social {
+    float: right;
+  }
+  .social li {
+    display: inline;
+  }
+  .social li a {
+    color: black;
+    padding: 0.2em;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  .social li a:hover {
+    color: red;
+  }
+  @media only screen and (max-width:1000px) {
+    .wrapper {
+      padding: 0% 4%;
+    }
+    .work {
+      padding: 4% 0;
+    }
+    .image-area {
+      float: left;
+      width: 100%;
+      height: auto;
+    }
+    .text-box {
+      width: 100%;
+      height: auto;
+    }
+    .social li a {
+      font-size: 1.4em;
+    }
+    .footer-content {
+      padding: 3.5%;
+    }
+  }
+  @media only screen and (max-width:800px) {
+    .intro h1 {
+      font-size: 4em;
+      line-height: 1.2;
+    }
+    .intro h2 {
+      font-size: 1.8em;
+      padding-top: 3%;
+    }
+    .about p {
+      font-size: 1em;
+      line-height: 2;
+    }
+    footer {
+      height: 130px;
+      line-height: 1.3em;
+    }
+    .footer-content {
+      padding: 4%;
+      font-size: 14px;
+    }
+    .social {
+      float: left;
+    }
+    .social li a {
+      font-size: 1.3em;
+    }
+    .contact-content {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    
+  
+   
+    
